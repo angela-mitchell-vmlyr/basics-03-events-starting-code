@@ -18,12 +18,8 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <!-- you can explicitly call a function list this -->
-      <!-- <button v-on:click="add()">Add</button> -->
-      
-      <!-- you can also point to a function like this = typical approach -->
-      <button v-on:click="add">Add</button>
-      <button v-on:click="reduce">Reduce</button>
+      <button v-on:click="add(10)">Add 10</button>
+      <button v-on:click="reduce(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
     </section>
   </body>
